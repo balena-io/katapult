@@ -117,7 +117,7 @@
     "prettify": "prettier --config ./node_modules/resin-lint/config/.prettierrc --write \"src/**/*.ts\" \"typings/**/*.ts\" \"test/**/*.ts\"",
     "lint": "resin-lint --typescript src/ test/ && tsc --noEmit",
     "postpack": "rm -f oclif.manifest.json",
-    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+      "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "localtest": "./test/scripts/localtest.sh",
     "test": "mocha \"test/**/*.spec.ts\"",
     "version": "oclif-dev readme && git add README.md"
